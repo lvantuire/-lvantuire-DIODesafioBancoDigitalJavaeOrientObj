@@ -1,5 +1,5 @@
 public class Banco {
-    private String nome;
+    private String nome = "BANCO du Québec";
 
     public String getNome() {
         return nome;
