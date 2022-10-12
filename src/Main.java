@@ -1,5 +1,24 @@
+import java.io.IOException;
+
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
+
+        Scanner leitor = new Scanner(System.in);
+        int n;
+
+        System.out.println("********************************");
+        System.out.println("**  1 - Abertura de Conta     **");
+        System.out.println("**  2 - Deposito              **");
+        System.out.println("**  3 - Saque                 **");
+        System.out.println("**  4 - Transferência         **");
+        System.out.println("**  5 - Impressão de Extrato  **");
+        System.out.println("********************************");
+
+        System.out.printf("DIGITE A TRANSAÇÃO ==> ");
+        n = leitor.nextInt();
+
 
         Cliente vantuir = new Cliente();
         vantuir.setNome("Luiz Vantuir");
@@ -24,3 +43,4 @@ public class Main {
 
     }
 }
+
